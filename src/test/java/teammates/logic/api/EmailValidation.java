@@ -16,10 +16,10 @@ public class EmailValidation {
 		String aux = email.substring(email.length() - 1);
 		
 		
-		if(email.contains(",") && email.contains("!") && email.contains("#") && email.contains("$") && email.contains("¨") 
-				&& email.contains("&") && email.contains("*") && email.contains("(") && email.contains(")") && email.contains("´") 
-				&& email.contains("`") && email.contains("/") && email.contains("?") && email.contains("}") && email.contains("{") 
-				&& email.contains("'\'")) return "não valido";
+		if(email.contains(",") || email.contains("!") || email.contains("#") || email.contains("$") || email.contains("¨") 
+				|| email.contains("&") || email.contains("*") || email.contains("(") || email.contains(")") || email.contains("´") 
+				|| email.contains("`") || email.contains("/") || email.contains("?") || email.contains("}") || email.contains("{") 
+				|| email.contains("'\'")) return "não valido";
 	
 		if(email.contains("@") && email.contains(".") && (aux.equals(".") == false))
 			return "possui";
